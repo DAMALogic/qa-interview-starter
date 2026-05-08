@@ -26,7 +26,7 @@ You do **not** need to build anything from scratch. The app is already running â
 ### 1. Clone and install
 
 ```bash
-git clone https://github.com/YOUR_ORG/qa-interview-starter.git
+git clone https://github.com/DAMALogic/qa-interview-starter.git
 cd qa-interview-starter
 npm run install:all
 ```
