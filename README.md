@@ -139,13 +139,6 @@ Every interactive element in the UI includes a `data-testid` attribute so your P
 
 There is no single correct answer. We are more interested in *how* you think than in hitting a specific number of tests.
 
-### What to bring to the interview
-
-- Your extended test suite committed to a fork or branch
-- Notes on what you tested and — importantly — what you *chose not to test* and why
-- Any bugs or gaps you found in the application
-- Questions you have about the codebase or the team's QA approach
-
 ---
 
 ## API Reference
