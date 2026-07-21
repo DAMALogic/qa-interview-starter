@@ -2,16 +2,6 @@
  * Task management tests
  *
  * Starter specs covering the core CRUD flows and filter behavior.
- * Candidates should extend these with edge cases and API-level tests.
- *
- * Suggested areas to explore:
- *  - Creating tasks with all priority levels
- *  - Editing a task and verifying the update persists
- *  - Due-date display and overdue styling
- *  - Search returns correct subset of tasks
- *  - Active task count updates correctly after each action
- *  - Bulk interactions (create many, filter, delete)
- *  - API contract tests (send malformed bodies, missing fields)
  */
 
 const { test, expect } = require('@playwright/test');
@@ -98,9 +88,6 @@ test.describe('Task Board', () => {
     await expect(taskPage.taskForm).not.toBeVisible();
   });
 
-  // TODO (candidate): Test editing an existing task
-  // TODO (candidate): Test that active count decrements after completing a task
-  // TODO (candidate): Test that active count decrements after deleting an active task
 });
 
 test.describe('Task Filters', () => {
@@ -150,7 +137,4 @@ test.describe('Task Filters', () => {
       expect(text.toLowerCase()).toContain('automat');
     }
   });
-
-  // TODO (candidate): Test that switching filter tabs resets search
-  // TODO (candidate): Test empty state message when search returns no results
 });

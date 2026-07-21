@@ -2,13 +2,6 @@
  * Authentication flow tests
  *
  * These starter specs cover the happy path and two negative cases.
- * Candidates should add additional tests to achieve thorough coverage.
- *
- * Suggested areas to explore:
- *  - Empty field validation (client-side and server-side)
- *  - Logout persists across page refreshes
- *  - Protected routes redirect to login when unauthenticated
- *  - Session expiry / token manipulation
  */
 
 const { test, expect } = require('@playwright/test');
@@ -53,8 +46,4 @@ test.describe('Authentication', () => {
     await page.getByTestId('logout-btn').click();
     await expect(page.getByTestId('login-page')).toBeVisible();
   });
-
-  // TODO (candidate): Add test — empty username shows client-side / server error
-  // TODO (candidate): Add test — empty password shows client-side / server error
-  // TODO (candidate): Add test — task board is not accessible without auth token
 });

@@ -2,14 +2,7 @@
  * API-level tests (via Playwright's `request` context)
  *
  * Starter specs covering the REST API contract independently from the UI.
- * Senior QA candidates should demonstrate comfort with both UI and API testing.
  *
- * Suggested areas to explore:
- *  - Response schema validation
- *  - Boundary / fuzz testing on title length
- *  - Concurrent requests (race conditions)
- *  - Auth token tampering
- *  - CRUD round-trip: create → read → update → delete
  */
 
 const { test, expect } = require('@playwright/test');
@@ -144,8 +137,4 @@ test.describe('Tasks API', () => {
     expect(res.status()).toBe(404);
   });
 
-  // TODO (candidate): Test GET /tasks?status=active only returns incomplete tasks
-  // TODO (candidate): Test GET /tasks?search=foo filters correctly
-  // TODO (candidate): Test PUT with an invalid priority value → 400
-  // TODO (candidate): Test creating a task with a duplicate title (currently allowed — is this a bug?)
 });
