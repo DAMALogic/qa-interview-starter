@@ -2,7 +2,7 @@
 
 Welcome! This repository contains a self-contained full-stack web application you will use as the basis for your QA automation interview.
 
-You do **not** need to build anything from scratch. The app is already running — your job is to explore it, think critically about its testability, and write automation tests that demonstrate your skills and thinking.
+You do **not** need to build anything from scratch. The app is already running — your job is to explore it, think critically about its testability, and prepare to write automation tests during the interview that demonstrate your skills and thinking.
 
 ---
 
